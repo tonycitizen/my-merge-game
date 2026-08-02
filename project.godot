@@ -1,0 +1,44 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="MyMergeGame"
+run/main_scene="res://merge_grid.tscn"
+config/features=PackedStringArray("4.6", "Mobile")
+config/icon="res://icon.svg"
+
+[display]
+
+window/handheld/orientation=1
+
+[rendering]
+
+renderer/rendering_method="mobile"
+
+[xogot]
+
+project/editorState=[{
+"column": 0,
+"line": 69,
+"path": "res://merge_item.gd",
+"type": "file"
+}, {
+"column": 20,
+"current": true,
+"line": 372,
+"path": "res://merge_grid.gd",
+"type": "file"
+}]
+project/shaderEditorState=[]
+project/breakpoints={
+"res://merge_grid.gd": PackedInt32Array(31)
+}
+project/disabled_breakpoints={}

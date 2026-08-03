@@ -1,5 +1,11 @@
 extends Node2D
 
+var MobileAds = Engine.get_singleton("GodotAdMob") if Engine.has_singleton("GodotAdMob") else FakeAdMob.new()
+
+class FakeAdMob:
+	func is_rewarded_video_loaded() -> bool: return true
+	func show_rewarded_video(): print("Web Test AD")
+
 var grid_size = Vector2i(4, 4)
 var cell_size = 130
 var grid_origin = Vector2.ZERO 
